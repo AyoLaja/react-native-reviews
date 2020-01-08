@@ -8,7 +8,13 @@ export const globalStyles = StyleSheet.create({
 	},
 	titleText: {
 		fontFamily: 'robotomono-bold',
-    fontSize: 15,
+    fontSize: 18,
+    color: '#fff',
+    marginBottom: 5
+  },
+  bodyText: {
+		fontFamily: 'robotomono-regular',
+    fontSize: 13,
     color: '#fff'
   },
   paragraph: {
@@ -16,3 +22,13 @@ export const globalStyles = StyleSheet.create({
     marginVertical: 0
   }
 })
+
+export const ratingsImages = {
+  ratings: {
+    '1': require('../assets/rating-1.png'),
+    '2': require('../assets/rating-2.png'),
+    '3': require('../assets/rating-3.png'),
+    '4': require('../assets/rating-4.png'),
+    '5': require('../assets/rating-5.png'),
+  }
+}

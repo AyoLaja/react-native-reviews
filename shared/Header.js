@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image, ImageBackground } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function Header(props) {
@@ -9,8 +9,9 @@ export default function Header(props) {
 
   return (
     <View style={styles.header}>
-    <Ionicons name="ios-menu" size={30} style={styles.icon} onPress={openMenu}/>
-      <View>
+      <Ionicons name="ios-menu" size={30} style={styles.icon} onPress={openMenu}/>
+      <View style={styles.headerTitle}>
+        <Image source={require('../assets/heart_logo.png')} style={styles.headerImage}/>
         <Text style={styles.headerText}>{props.title}</Text>
       </View>
     </View>
@@ -35,5 +36,13 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: -50,
     color: '#fff'
+  },
+  headerImage: {
+    width: 26,
+    height: 26,
+    marginRight: 10
+  },
+  headerTitle: {
+    flexDirection: 'row'
   }
 })

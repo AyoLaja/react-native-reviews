@@ -11,7 +11,7 @@ const screens = {
     navigationOptions: (props) => {
       //Changed from title to headerTitle because titile only accepts strings
       return {
-        headerTitle: () => <Header navigation={props.navigation} title="Gamezone Home"/>
+        headerTitle: () => <Header navigation={props.navigation} title="Gamezone"/>
       }
     }
   },
